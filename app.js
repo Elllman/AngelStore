@@ -86,11 +86,9 @@ app.delete("/blogs/:id", function(req, res){
 });
 
 
-app.listen(3000, function() { 
-  console.log("Сервер запущен!")
+var port = process.env.PORT || 3000;
+app.listen(port, function () {
+console.log("Server Has Started!");
 });
-
-
-
 
 
