@@ -1,0 +1,109 @@
+
+<%- include("partials/header") %>
+<div class="ui centered segment"> 
+<form class="ui form">
+  <h4 class="ui dividing header">Информация о доставке</h4>
+  <div class="field">
+    <label>Имя</label>
+    <div class="two fields">
+      <div class="field">
+        <input type="text" name="shipping[first-name]" placeholder="Имя">
+      </div>
+      <div class="field">
+        <input type="text" name="shipping[last-name]" placeholder="Фамилия">
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <label>Адресс доставки</label>
+    <div class="fields">
+      <div class="twelve wide field">
+        <input type="text" name="shipping[address]" placeholder="Адресс улицы">
+      </div>
+      <div class="four wide field">
+        <input type="text" name="shipping[address-2]" placeholder="Номер дома">
+      </div>
+    </div>
+  </div>
+  <div class="two fields">
+    <div class="field">
+      <label>Область или город</label>
+      <select class="ui fluid dropdown">
+        <option value="">Область или город</option>
+    <option value="AL">Алматы</option>
+    <option value="KS">Шымкент</option>
+    <option value="AZ">Нур-Султан</option>
+    <option value="AK">Атырауская область</option>
+    <option value="AR">Карагандинская область</option>
+    <option value="CA">Туркестанская область</option>
+    <option value="CO">Восточно-Казахстанская область</option>
+    <option value="CT">Мангистауская область</option>
+    <option value="DE">Алматинская область</option>
+    <option value="DC">Западно-Казахстанская область</option>
+    <option value="FL">Актюбинская область</option>
+    <option value="GA">Павлодарская область</option>
+    <option value="HI">Костанайская область</option>
+    <option value="ID">Акмолинская область</option>
+    <option value="IL">Кызылординская область</option>
+    <option value="IN">Жамбылская область</option>
+    <option value="IA">Северо-Казахстанская областьIowa</option>
+    
+      </select>
+    </div>
+    <div class="field">
+      <label>Страна</label>
+      
+      <select class="ui fluid dropdown">
+        <option value="">Страна</option>
+        <option  data-value="kz"><i ></i>Казахстан</option>
+        <option  data-value="mn"><i ></i>Монголия</option>
+        <option  data-value="ru"><i ></i>Россия</option>
+        <option  data-value="tj"><i ></i>Таджикистан</option>
+        <option  data-value="tr"><i ></i>Турция</option>
+        <option  data-value="uz"><i ></i>Узбекистан</option>
+    </select>
+    </div>
+      </div>
+
+    
+  
+  <h4 class="ui dividing header">Платежная информация</h4>
+
+  <div class="field">
+      <label>Карта</label>
+      
+      <select class="ui fluid dropdown">
+        <option value="">Выберите карту</option>
+        <option  data-value="visa"><i></i>Visa</option>
+        <option  data-value="kaspi"><i></i>Kaspi</option>
+        <option  data-value="halykbank"><i></i>Halyk bank</option>
+        
+    </div>
+
+ 
+  <div class="fields">
+    <div class="seven wide field">
+      <label>Номер карты</label>
+      <input type="text" name="card[number]" maxlength="16" placeholder="Номер #">
+    </div>
+    <div class="three wide field">
+      <label>CVC код</label>
+      <input type="text" name="card[cvc]" maxlength="3" placeholder="CVC">
+    </div>
+    <form action="/blogs" > 
+     <button  class="ui button" onclick="myFunction()" >
+            Заказать
+            <script>
+                function myFunction() {
+                  alert("Спасибо за покупку!Доставка будет осуществлена в течении 30 минут.");
+                }
+                </script>
+      </button>
+      </form>
+  </div>
+   
+        
+</form>
+</div>
+
+<%- include("partials/footer") %>

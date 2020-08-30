@@ -1,0 +1,72 @@
+<%- include("partials/header") %>
+
+             
+             <div class="ui tertiary inverted  segment" >
+         
+              <img class="ui centered bordered image" src="https://99px.ru/sstorage/53/2018/05/tmb_227921_153658.jpg">
+                  
+                  <h1 class="ui center violet aligned header">
+                       
+                          Angel Store
+                          <div class="sub header">plants our friends</div>
+                   </h1>
+                   
+              </div>
+         
+               <div class="ui four column centered grid" >
+<% blogs.forEach( function (blog){ %>
+    
+       
+        <div class="ui link cards">
+             
+           
+             <div class="card">
+               <div class="image">
+                 <img src="<%= blog.image %>">
+               </div>
+               <div class="content">
+                 <div class="header"><h2> <%=blog.title%>  </h2></div>
+                 
+                 <div class="description">
+                   <p> <%= blog.body.substring(0, 100) %>... </p>
+                 </div>
+               </div>
+               <div class="extra content">
+                 <span class="right floated">
+                   <p> <%= blog.count %> бутонов </p>
+                 </span>
+                 <span class="left floated">
+                   <i class="tags icon"></i>
+                   <p> <%=  blog.price  %> тенге</p>
+                 </span>
+               </div>
+           
+              
+
+                <div> 
+               <button class="ui button">
+                    <a href="/blogs/<%= blog._id %>"> Открыть</a>
+               </button>
+               </div>
+
+            </div>
+        </div>
+        
+
+<% })%>
+        <div class="ui segment">
+               <img class="ui huge left floated image" src="https://www.firestock.ru/wp-content/uploads/2018/06/TSvetyi-tsvetochnik-bumaga-upakovka-remeslo-Flowers-florist-paper-packaging-craft-5000--3337-700x466.jpg">
+               <div class="aboutus"> 
+               	<h2> <strong> О нас</strong> </h2>
+               <p>​ <strong>«Angel Store» </strong> — это первоклассные товары и безупречное обслуживание покупателей. Всеми нашими услугами вы можете воспользоваться, не выходя из дома. Мы — команда новаторов, нацеленных на передовые решения, обладающих энергией и ресурсами для непрерывной модернизации и совершенствования процесса покупок в интернете.</p>
+                <p> Наш интернет-магазин стал синонимом качества. Мы гарантируем постоянную доступность широкого ассортимента товаров для любого бюджета. Ознакомьтесь с нашим каталогом и приступайте к покупкам.</p>
+               </div>
+         </div>
+
+         <div class="map">
+         	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7362.873276924975!2d69.58812507729023!3d42.31642536229421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38a91ea65d84496b%3A0xeddeb44287215fac!2sShymkent%20Plaza!5e0!3m2!1sru!2skz!4v1587221976725!5m2!1sru!2skz" width="1000" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+         </div>
+
+</div>
+
+<%- include("partials/footer") %>

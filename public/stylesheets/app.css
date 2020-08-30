@@ -1,0 +1,86 @@
+i.icon{
+	font-size: 1.5em;
+}
+
+.container.main {
+	margin-top: 4.0em;
+}
+
+.ui.center.aligned.header{
+	margin-top: 2.3em;
+	font-size: 50pt;
+}
+
+.ui.centered.bordered.image {
+        		height: 500px;
+        		width: 1000px;
+        		margin-top: 50px;
+
+        	}
+.ui.tertiary.inverted.segment{
+        		width: 100%;
+        		height: 1050px;
+        		background-color: #ecd8e9;
+        		margin-top: 0px;
+        	} 
+.sub.header {
+
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.ui.secondory.inverted.segment{
+	background-color: #ad66a9;
+}
+.ui.main.piled.inverted.text.container.segment{
+	background-color: #d8b1d4;
+	margin-top: 20px;
+
+}
+.ui.inverted.segment{
+	background-color: #c38bbf;
+}
+.ui.inverted{
+	color: black;
+}
+.ui.centered.header{
+	margin-top: 10px;
+	font-size: 25pt;
+}
+.ui.centered.segment{
+	width: 70%;
+	margin: auto;
+	background-color: #d8b1d4;
+}
+
+.ui.circular.labels{
+	margin-left: 420px;
+	margin-top: 15px;
+}
+.ui.tag.labels{
+	margin-top: -32px;
+	margin-left: 500px;
+}
+.ui.segment {
+	margin-top: 80px;
+	width: 90%;
+	margin: center;
+	
+}
+.ui.link.cards {
+	margin-top: 12px;
+}
+.aboutus {
+	margin: center;
+	margin-top: 130px;
+	font-family: Verdana, Geneva, sans-serif;
+
+}
+.map {
+	margin-right: 20px;
+}
+.down {
+	margin-left: 600px;
+	margin-top: 75px;
+}
+.ui.button {
+	width: 100%;
+}

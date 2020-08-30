@@ -1,0 +1,6 @@
+.env
+.DS_store
+node_modules
+public/.DS_store
+views/.DS_store
+public/photos/.DS_store
